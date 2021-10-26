@@ -1,0 +1,362 @@
+dddddddddddddddddddddddddddddddddddd dddddddddddddddddddddddddd dddddddddddddddddddd
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git init
+Initialized empty Git repository in C:/Users/Vinay/Desktop/New folder/.git/
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git remote add origin "https://github.com/vinay-kumbhar/akurdiapril.git"
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/vinay-kumbhar/akurdiapril
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git add aaaa.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "frist commit"
+[master fa7b024] frist commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aaaa.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 150.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/vinay-kumbhar/akurdiapril.git
+   b4e96b9..fa7b024  master -> master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git add bbbb.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bbbb.txt
+
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "2nd commit"
+[master 374c362] 2nd commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bbbb.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 306 bytes | 76.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/vinay-kumbhar/akurdiapril.git
+   fa7b024..374c362  master -> master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cccc/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git add cccc
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   cccc/New Text Document.txt
+
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "3rd coomit"
+[master a718c08] 3rd coomit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cccc/New Text Document.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 335 bytes | 335.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vinay-kumbhar/akurdiapril.git
+   374c362..a718c08  master -> master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout -b one
+Switched to a new branch 'one'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$ git add dddd.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$ git commit -m "commit"
+[one 2c273b5] commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dddd.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$ git push origin one
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'one' on GitHub by visiting:
+remote:      https://github.com/vinay-kumbhar/akurdiapril/pull/new/one
+remote:
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ * [new branch]      one -> one
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$ git checkout master
+Switched to branch 'master'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git log
+commit a718c08cf9663d37162fa02f6d59afac1d1233b7 (HEAD -> master, origin/master)
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:51:40 2021 +0530
+
+    3rd coomit
+
+commit 374c3621da0c5b7c4daffd9b7e05d01aa02532a5
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:47:26 2021 +0530
+
+    2nd commit
+
+commit fa7b024ea5d932dc7b03f64956399d1476359ad4
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:38:55 2021 +0530
+
+    frist commit
+
+commit b4e96b9b732120a586c36e777fc6d8caf01bf01c
+Author: vinay-kumbhar <59816108+vinay-kumbhar@users.noreply.github.com>
+Date:   Mon Oct 25 10:34:28 2021 +0530
+
+    Initial commit
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout -b two
+Switched to a new branch 'two'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (two)
+$ git add eeee.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (two)
+$ git commit -m "two branch commit"
+[two 3b08730] two branch commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 eeee.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (two)
+$ git push origin two
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 277 bytes | 92.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'two' on GitHub by visiting:
+remote:      https://github.com/vinay-kumbhar/akurdiapril/pull/new/two
+remote:
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ * [new branch]      two -> two
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (two)
+$ git checkout master
+Switched to branch 'master'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git merge one
+Updating a718c08..2c273b5
+Fast-forward
+ dddd.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dddd.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/vinay-kumbhar/akurdiapril.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/vinay-kumbhar/akurdiapril.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git log
+commit 2c273b53a3e20047b3800099ab57d6063e505658 (HEAD -> master, origin/one, one)
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:55:57 2021 +0530
+
+    commit
+
+commit a718c08cf9663d37162fa02f6d59afac1d1233b7 (origin/master)
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:51:40 2021 +0530
+
+    3rd coomit
+
+commit 374c3621da0c5b7c4daffd9b7e05d01aa02532a5
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:47:26 2021 +0530
+
+    2nd commit
+
+commit fa7b024ea5d932dc7b03f64956399d1476359ad4
+Author: vinay-kumbhar <veenay.kumbhar@gmail.com>
+Date:   Mon Oct 25 10:38:55 2021 +0530
+
+    frist commit
+
+commit b4e96b9b732120a586c36e777fc6d8caf01bf01c
+Author: vinay-kumbhar <59816108+vinay-kumbhar@users.noreply.github.com>
+Date:   Mon Oct 25 10:34:28 2021 +0530
+
+    Initial commit
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git merge one -m "mergee"
+Already up to date.
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/vinay-kumbhar/akurdiapril.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout -b three
+Switched to a new branch 'three'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (three)
+$ git add fff.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (three)
+$ git commmit -m "aaa"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (three)
+$ git commit -m "aaa"
+[three 924c6db] aaa
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fff.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (three)
+$ git push origin three
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'three' on GitHub by visiting:
+remote:      https://github.com/vinay-kumbhar/akurdiapril/pull/new/three
+remote:
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ * [new branch]      three -> three
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (three)
+$ git checkout master
+Switched to branch 'master'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git merge three -m "hhhhh"
+Updating 2c273b5..924c6db
+Fast-forward (no commit created; -m option ignored)
+ fff.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fff.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+To https://github.com/vinay-kumbhar/akurdiapril.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/vinay-kumbhar/akurdiapril.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout one
+Switched to branch 'one'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$ git merge three -m "three merge"
+Updating 2c273b5..924c6db
+Fast-forward (no commit created; -m option ignored)
+ fff.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fff.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$ git push origin one
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/vinay-kumbhar/akurdiapril.git
+   2c273b5..924c6db  one -> one
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (one)
+$
